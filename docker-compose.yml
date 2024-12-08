@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  java-swing-app:
+    image: java-swing-app
+    container_name: java-swing-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    networks:
+      - app-network
+
+networks:
+  app-network:

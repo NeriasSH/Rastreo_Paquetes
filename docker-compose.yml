@@ -9,7 +9,7 @@ services:
     volumes:
       - .:/app
     networks:
-      - app-networks
+      - app-network
 
 networks:
-  app-networks:
+  app-network:
